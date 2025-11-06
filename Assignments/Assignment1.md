@@ -5,7 +5,10 @@ This assignment focuses on building a **Profile UI Screen** using SwiftUI.
 ---
 
 ## Objective
-<img width="800" height="800" alt="image" src="https://github.com/user-attachments/assets/2dc844b6-049b-457f-9c97-0701350a0b88" />
+
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/2dc844b6-049b-457f-9c97-0701350a0b88" alt="Objective Screenshot" width="60%" />
+</div>
 
 Design a **Profile Screen** similar to the reference image. Your screen should include:
 
