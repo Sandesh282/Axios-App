@@ -29,7 +29,7 @@ This task is designed to help you practice **SwiftUI layout composition**, **sta
    * `Image`, `Text`, and `Rectangle` or `RoundedRectangle`
    * `Spacer` and `Divider` where necessary for spacing and separation
 3. Format your text using modifiers such as `.font()`, `.foregroundColor()`, `.padding()`, and `.bold()`.
-4. Arrange the gallery using a **grid-like layout** (e.g., using `LazyVGrid`).
+4. Arrange the gallery using Stacks (VStack, HStack, ZStack).
 5. Make sure your design is visually clean and properly aligned.
 
 ---
