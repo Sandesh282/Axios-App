@@ -161,6 +161,30 @@ ZStack {
 * `.padding()` adds space around the content.
 * `.alignmentGuide()` or alignment parameters can adjust how elements align inside stacks.
 
+### ForEach Loops
+
+`ForEach` lets you create multiple views in a structured and reusable way. It is especially useful when you want to render a list or a grid of items. The syntax typically looks like this:
+
+```swift
+ForEach(0..<3) { index in
+    Text("Row \(index)")
+}
+```
+
+Here, `0..<3` is a range that loops three times, and `index` gives you the current loop value. You can use it to build dynamic views based on data.
+
+If you are working with an array instead of a range:
+
+```swift
+let names = ["Sandesh", "Riya", "Aarav"]
+
+ForEach(names, id: \.self) { name in
+    Text(name)
+}
+```
+
+The `id: \.self` tells SwiftUI how to uniquely identify each item in the list.
+
 ### Example: Profile Grid Layout with Profile Header
 
 To build a more realistic layout like an Instagram profile view, we can use `VStack` for vertical stacking, `HStack` for profile info, and `ForEach` for generating the gallery.
@@ -208,6 +232,17 @@ ZStack {
     .padding()
 }
 ```
+
+### How It Works
+
+* `.ignoresSafeArea()` allows the white background color to extend under system UI elements like the notch or home indicator, giving a clean, full-screen appearance.
+* The **outer VStack** organizes the profile section and gallery vertically.
+* Inside the **gallery section**, two nested `ForEach` loops generate a grid:
+
+  * The **outer loop** (`ForEach(0..<3)`) creates three rows.
+  * The **inner loop** creates three rectangles per row.
+* Each rectangle is styled with a gray color and an image overlay.
+* You can modify the range (like `0..<4`) to increase the number of rows or columns.
 
 This version separates the **profile section** (with name and photo in an `HStack`) from the **gallery** (using nested `ForEach` loops). The layout looks cleaner and more realistic, resembling a simple social media profile grid.
 
