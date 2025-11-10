@@ -109,11 +109,11 @@ git push origin assignment-1-ravi
 
 ## Submission Rules
 
-✅ Keep your folder names clean (`assignments/<your-name>/`)
-✅ Don’t edit or delete others’ files
-✅ One Pull Request per assignment
-✅ Make sure your code runs without errors
-✅ Always pull the latest changes before starting a new assignment
+- Keep your folder names clean (`assignments/<your-name>/`)
+- Don’t edit or delete others’ files
+- One Pull Request per assignment
+- Make sure your code runs without errors
+- Always pull the latest changes before starting a new assignment
 
 ---
 
