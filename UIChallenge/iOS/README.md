@@ -2,7 +2,6 @@ This repository contains a **starter SwiftUI project** for a UI-focused assignme
 
 The goal of this challenge is to test your understanding of **SwiftUI basics, state handling, layout, and theming**, not to build a large or complex app.
 
----
 
 ## Challenge Objective
 
