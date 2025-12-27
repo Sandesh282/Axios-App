@@ -120,10 +120,10 @@ Focus on **clarity and correctness**, not over-engineering.
 
 **Do NOT raise a Pull Request**
 
-Submit your assignment using the following Google Drive link:
+Submit your assignment using the following Google Form link:
 
 **Submission Folder**
-[https://drive.google.com/drive/folders/1VTUphs0aPdwgO_Tnn6vl6t40jQ6bW6f0?usp=sharing](https://drive.google.com/drive/folders/1VTUphs0aPdwgO_Tnn6vl6t40jQ6bW6f0?usp=sharing)
+[here](https://docs.google.com/forms/d/e/1FAIpQLSf5behp6IUB8Eq1BA8XPMTBOckJuZm7mFgKJZSV_sY8THLznA/viewform)
 
 ### What to Upload
 
