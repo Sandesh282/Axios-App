@@ -36,35 +36,32 @@ If you violate this rule, the submission is considered incorrect.
 - Displays SF Symbol: `checkmark`
 
 Both states must be represented by the **same shape instance**.
-
 ## Required Components
 
 1. **Background Shape**
-   - `RoundedRectangle`
-   - Animates:
-
-     - Width
-     - Height
-     - Corner radius
-     - Color
+    - `RoundedRectangle`
+    - Animates:
+        - Width
+        - Height
+        - Corner radius
+        - Color
 
 2. **Conditional Content**
+    - Text visible **only** in pending state
+    - Checkmark icon visible **only** in success state
+    - Must use `if / else` with `.transition()`
 
-   - Text visible **only** in pending state
-   - Checkmark icon visible **only** in success state
-   - Must use `if / else` with `.transition()`
-
-1. **Action Button**
-   - Toggles state between pending and success
-   - Label changes between **Pay Now** and **Reset**
-   - State change must be wrapped in `withAnimation` 
+3. **Action Button**
+    - Toggles state between pending and success
+    - Label changes between **Pay Now** and **Reset**
+    - State change must be wrapped in `withAnimation`
 
 ## Animation Constraints
 
 - Use `.spring()` animation
 - You must tune at least:
-  - `response`
-  - `dampingFraction`
+    - `response`
+    - `dampingFraction`
 
 Recommended range:
 - `dampingFraction`: 0.4 – 0.8
