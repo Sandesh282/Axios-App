@@ -1,18 +1,17 @@
 This assignment introduces **state-driven animation** in SwiftUI. The focus is not decoration, but understanding how **state changes drive view interpolation**.
 ## Objective
-
-https://github.com/user-attachments/assets/9a1ce573-25b2-4f70-93f0-8aa0f18ccc5b
-
+**Demo Video:**  
+[Screen Recording](https://github.com/user-attachments/assets/9a1ce573-25b2-4f70-93f0-8aa0f18ccc5b)
 
 Build an interactive **Payment Confirmation** component where a payment card **morphs** into a success indicator.
 
 The animation must be driven purely by state changes, not by swapping views
 
 ## What This Assignment Teaches
-* Using `@State` as the single source of truth
-* Animating layout and shape properties
-* Understanding how SwiftUI interpolates values
-* Proper use of `withAnimation` and `.transition()`
+- Using `@State` as the single source of truth
+- Animating layout and shape properties
+- Understanding how SwiftUI interpolates values
+- Proper use of `withAnimation` and `.transition()`
 
 ## Core Rule (Non-Negotiable)
 **Morph Rule:**
@@ -21,74 +20,73 @@ You must animate the properties of **one single `RoundedRectangle`**.
 
 Do **not**:
 
-* Replace one view with another
-* Crossfade two shapes
-* Animate opacity to fake a morph
+- Replace one view with another
+- Crossfade two shapes
+- Animate opacity to fake a morph
 
 If you violate this rule, the submission is considered incorrect.
 ## Visual States
 ### Pending State (Initial)
 
-* Large blue rounded rectangle
-* Displays text: **CONFIRM PAYMENT**
+- Large blue rounded rectangle
+- Displays text: **CONFIRM PAYMENT**
 ### Success State (Final)
 
-* Small green circle
-* Displays SF Symbol: `checkmark`
+- Small green circle
+- Displays SF Symbol: `checkmark`
 
 Both states must be represented by the **same shape instance**.
 
 ## Required Components
 
 1. **Background Shape**
-   * `RoundedRectangle`
-   * Animates:
+   - `RoundedRectangle`
+   - Animates:
 
-     * Width
-     * Height
-     * Corner radius
-     * Color
+     - Width
+     - Height
+     - Corner radius
+     - Color
 
 2. **Conditional Content**
 
-   * Text visible **only** in pending state
-   * Checkmark icon visible **only** in success state
-   * Must use `if / else` with `.transition()`
+   - Text visible **only** in pending state
+   - Checkmark icon visible **only** in success state
+   - Must use `if / else` with `.transition()`
 
 1. **Action Button**
-   * Toggles state between pending and success
-   * Label changes between **Pay Now** and **Reset**
-   * State change must be wrapped in `withAnimation` 
+   - Toggles state between pending and success
+   - Label changes between **Pay Now** and **Reset**
+   - State change must be wrapped in `withAnimation` 
 
 ## Animation Constraints
 
-* Use `.spring()` animation
-* You must tune at least:
-  * `response`
-  * `dampingFraction`
+- Use `.spring()` animation
+- You must tune at least:
+  - `response`
+  - `dampingFraction`
 
 Recommended range:
-
-* `dampingFraction`: 0.4 – 0.8
+- `dampingFraction`: 0.4 – 0.8
 
 The animation should feel **physical**, not linear.
 
 ## Layout Rules
 
-* Entire component centered
-* Dark or black background
-* No unnecessary UI elements
+- Entire component centered
+- Dark or black background
+- No unnecessary UI elements
 
 Minimalism is intentional.
 
 ## Implementation Notes
 
 
-* Modifier order matters
-  * Apply `.frame()` **before** background or shape modifiers
+- Modifier order matters
+  - Apply `.frame()` **before** background or shape modifiers
 
-* Transitions must be applied to conditional views
-* Avoid placing `.animation()` globally on the root view
+- Transitions must be applied to conditional views
+- Avoid placing `.animation()` globally on the root view
 ---
 ## Concept Check (For You)
 
@@ -142,9 +140,9 @@ You do not need to submit answers, but you are expected to understand them.
 
 This assignment is evaluated on:
 
-* Correct use of state
-* Clean animation logic
-* Respecting constraints
-* Code clarity
+- Correct use of state
+- Clean animation logic
+- Respecting constraints
+- Code clarity
 
 Visual flair without understanding will not score well.
