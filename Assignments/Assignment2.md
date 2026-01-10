@@ -1,14 +1,9 @@
 This assignment introduces **state-driven animation** in SwiftUI. The focus is not decoration, but understanding how **state changes drive view interpolation**.
 ## Objective
 
-<div align="center"> <p>
-
-
 https://github.com/user-attachments/assets/9a1ce573-25b2-4f70-93f0-8aa0f18ccc5b
 
 
-
-</p> </div>
 Build an interactive **Payment Confirmation** component where a payment card **morphs** into a success indicator.
 
 The animation must be driven purely by state changes, not by swapping views
