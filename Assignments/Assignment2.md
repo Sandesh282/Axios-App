@@ -131,7 +131,7 @@ You do not need to submit answers, but you are expected to understand them.
 
   
 
-## Evaluation Philosophy
+## Evaluation Criteria
 
   
 
